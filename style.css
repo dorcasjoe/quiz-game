@@ -2,14 +2,14 @@
 	border-sizing:	border-box;
 	font-family:	Arial, Helvetica, sans-serif;
 }
-/* for mobile phones 
+// for mobile phones 
 @media (min-width: 576px) {
 		body {
 			background-color: skyblue;
 	}
-}*/
+}
 body {
-	background-color:  skyblue;
+	background-color:  purple;
 	display: flex;
 	align-items: center;
 	justify-content: center;
