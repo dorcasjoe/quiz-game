@@ -1,3 +1,3 @@
-#My App
+# My App
 
 My responsive quiz game
