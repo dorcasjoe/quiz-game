@@ -24,9 +24,8 @@
 	margin-bottom:.75rem;
 	padding-bottom: 1rem;
 	font-family: inherit;
-	font-size: 20px;
+	font-size: 50px;
 	text-align: center;
-	font-weight: bold;
 }
 .btn-grid {
 	display: grid;
