@@ -43,7 +43,7 @@ function showQuestion(question) {
 	button.addEventListener('click' ,  selectAnswer)
 	answerButtonsElement.appendChild(button)
     })
-    counter.innerText = `Question: ${(currentQuestionIndex + 1)} / 5`
+    counter.innerText = `Question: ${(currentQuestionIndex + 1)} `
 }
 
 function resetState() {
@@ -59,9 +59,9 @@ function selectAnswer(e) {
     if (correct) {
         
         points += 1; 
-        score.textContent = `Correct answer: ${points}`;
+        score.textContent = `Correct answer: ${points} / 5`;
         if (points > 1){
-            score.textContent = `Correct answers: ${points}`;
+            score.textContent = `Correct answers: ${points} / 5`;
         } 
     }
 	Array.from(answerButtonsElement.children).forEach(button => {
