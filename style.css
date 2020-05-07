@@ -83,14 +83,14 @@
 }
 @media only screen and (max-width: 480px) {
 		body {
-			background-color: grey;
+			background-color: lightgrey;
 	}
 		.btn {
-			background-color: grey;
+			background-color:light grey;
 			color: #ffffff;
 	}
 		.start-btn, .next-btn {
-			background-color: grey;
+			background-color: lightgrey;
 			color: #ffffff;
 	}
 	
