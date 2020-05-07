@@ -80,7 +80,7 @@ const showResults = () => {
 
     questionContainerElement.innerHTML = "";
     const markup = `
-    <div class="final" style = "align: center";>
+    <div class="final" style = "text-align: center";>
             <h1>Thanks for playing!</h1>
             <h2>
             Your score is: ${points}
