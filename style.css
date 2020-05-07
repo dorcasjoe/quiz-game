@@ -25,6 +25,7 @@
 	padding-bottom: 1rem;
 	font-family: inherit;
 	font-size: 20px;
+	text-align: center;
 }
 .btn-grid {
 	display: grid;
@@ -35,7 +36,7 @@
 }
 .btn {
 	background-color: purple;
-	color: #000000;
+	color: #ffffff;
 	border: 2px solid #ffffff;
 	border-radius: 8px;
 	padding: 10px;
@@ -83,5 +84,9 @@
 @media only screen and (max-width: 480px) {
 		body {
 			background-color: skyblue;
+	}
+	button {
+		background-color: skyblue;
+		color: #ffffff;
 	}
 }
