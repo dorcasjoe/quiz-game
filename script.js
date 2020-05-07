@@ -73,9 +73,9 @@ function selectAnswer(e) {
 		nextButton.classList.remove('hide')
 	} else {
 		showResults()
+		counter.classList.add('hide')
+		score.classList.add('hide')
 	}
-	counter.classList.add('hide')
-	score.classList.add('hide')
 }
 
 const showResults = () => {
