@@ -110,11 +110,7 @@ function setStatusClass(element, correct) {
 		element.classList.add('correct')
 	} else {
 		element.classList.remove('wrong')
-	}
-	if (wrong) {
-		element.classList.add('wrong')
-	} else {
-		element.classList.add('correct')
+		}
 	}
 }
 
