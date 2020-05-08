@@ -107,14 +107,11 @@ const showResults = () => {
     document.getElementById('restart').addEventListener('click', () => {
         window.location.reload(); 
     }); 
-   
 }
 
 function setStatusClass(element, correct) {
 	clearStatusClass(element)
 	if (correct) {
-		element.classList.add('correct')
-	} else {
 		element.classList.remove('wrong')
 		}
 }
