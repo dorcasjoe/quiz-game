@@ -75,11 +75,9 @@ function selectAnswer(e) {
 		nextButton.classList.remove('hide')
 	} else {
 		showResults()
-		if (score >= 4) {
-			score.innerText = `You are a<strong> genius </strong>`;
-		}
 		counter.classList.add('hide')
-		}
+		score.classList.add('hide')
+	}
 }
 
 const showResults = () => {
@@ -91,6 +89,9 @@ const showResults = () => {
             <h2>
             Your score is: ${points}
             </h2>
+			if (score >= 4) {
+			score.innerText = You are a<strong> genius </strong>;
+		}
 			<h4>Want to replay?</h4>
             <button id="restart" class="start-btn btn">
                 Restart
