@@ -75,6 +75,9 @@ function selectAnswer(e) {
 		nextButton.classList.remove('hide')
 	} else {
 		showResults()
+		if (score >= 4) {
+			score.innerText = `You are a<strong> genius </strong>`;
+		}
 		counter.classList.add('hide')
 		score.classList.add('hide')
 	}
