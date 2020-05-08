@@ -83,13 +83,7 @@ function selectAnswer(e) {
 const showResults = () => {
 
     questionContainerElement.innerHTML = "";
-	let comment 
-	if (points > 3) {
-		comment = "You must be a Genius "
-	} else { 
-	comment = ""
-	}
-    const markup = `
+	const markup = `
     <div class="final" style = "text-align: center";>
             <h1>Thanks for playing!</h1>
             <h2>
