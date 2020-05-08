@@ -84,8 +84,8 @@ const showResults = () => {
 
     questionContainerElement.innerHTML = "";
 	let comment 
-	if (points >= 4) {
-		comment = `You are a <strong> Genius </strong>`
+	if (points > 3) {
+		comment = "You must be a Genius "
 	} else { 
 	comment = ""
 	}
@@ -110,9 +110,9 @@ const showResults = () => {
 }
 
 function setStatusClass(element, correct) {
-	clearStatusClass(element)
 	if (correct) {
 		element.classList.remove('wrong')
+		element.classList.add('correct')
 		}
 }
 function clearStatusClass(element) {
