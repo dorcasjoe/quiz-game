@@ -111,9 +111,7 @@ function setStatusClass(element, correct) {
 	} else {
 		element.classList.remove('wrong')
 		}
-	}
 }
-
 function clearStatusClass(element) {
 	element.classList.remove('correct')
 	element.classList.remove('wrong')
