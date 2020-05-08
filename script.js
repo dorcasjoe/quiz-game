@@ -43,7 +43,7 @@ function showQuestion(question) {
 	button.addEventListener('click' ,  selectAnswer)
 	answerButtonsElement.appendChild(button)
     })
-    counter.innerText = `Question: ${(currentQuestionIndex + 1)} `
+    counter.innerText = `Question: ${(currentQuestionIndex + 1)} / 5`
 }
 
 function resetState() {
