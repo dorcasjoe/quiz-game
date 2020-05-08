@@ -83,15 +83,18 @@ function selectAnswer(e) {
 const showResults = () => {
 
     questionContainerElement.innerHTML = "";
+	let comment 
+	if (points >= 4) {
+		comment = `You are a <strong> Genius </strong>`
+	} else { 
+	comment = ""
+	}
     const markup = `
     <div class="final" style = "text-align: center";>
             <h1>Thanks for playing!</h1>
             <h2>
             Your score is: ${points}
             </h2>
-			if (score >= 4) {
-			score.innerText = You are a<strong> genius </strong>;
-		}
 			<h4>Want to replay?</h4>
             <button id="restart" class="start-btn btn">
                 Restart
