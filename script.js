@@ -79,8 +79,7 @@ function selectAnswer(e) {
 			score.innerText = `You are a<strong> genius </strong>`;
 		}
 		counter.classList.add('hide')
-		score.classList.add('hide')
-	}
+		}
 }
 
 const showResults = () => {
