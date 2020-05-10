@@ -22,6 +22,7 @@ function startGame() {
 	currentQuestionIndex = 0
 	introSpeech.classList.add('hide')
 	score.classList.remove('hide')
+	nextButton.classList.remove('hide')
 	questionContainerElement.classList.remove('hide')
 	setNextQuestion()
 }
@@ -29,13 +30,16 @@ function startGame() {
 	function setNextQuestion () {
 	resetState() 
 	showQuestion(shuffledQuestions[currentQuestionIndex])
-	if (shuffledQuestions.length > currentQuestionIndex + 6) {
+	console.log(shuffledQuestions.length)
+	console.log(currentQuestionIndex)
+	if (shuffledQuestions.length < currentQuestionIndex + 6) {
 		nextButton.classList.remove('hide')
         showResults()
     }
 }
 
 function showQuestion(question) {
+	console.log('enter')
 	questionElement.innerText =  question.question
 	question.answers.forEach(answer => {
 		const button = document.createElement('button')
@@ -47,11 +51,11 @@ function showQuestion(question) {
 	button.addEventListener('click' ,  selectAnswer)
 	answerButtonsElement.appendChild(button)
     })
-    counter.innerText = `Question: ${(currentQuestionIndex + 1)} / 5`
+	counter.innerText = `Question: ${(currentQuestionIndex + 1)} / 5`
+	console.log('exit')
 }
 
 function resetState() {
-	nextButton.classList.add('hide')
 	while (answerButtonsElement.firstChild) {
 		answerButtonsElement.removeChild (answerButtonsElement.firstChild)
 	}
@@ -77,7 +81,9 @@ function selectAnswer(e) {
 }
 
 const showResults = () => {
-
+	counter.classList.add('hide')
+	score.classList.add('hide')
+	nextButton.classList.add('hide')
     questionContainerElement.innerHTML = "";
 	const markup = `
     <div class="final" style = "text-align: center";>
@@ -211,121 +217,3 @@ const questions = [
 			]
 	},
  ]
-	
-	
-
-	
-	
-	
-
-
-
-
-
-
-	
-
-
- 
-
-
-
-	
-	
-
-
-	
-
-
-    
-		
-		
-
-
-
-        
-
-    
-		
-	
-	
-		
-			
-				
-				
-		
-			
-		
-			
-	
-	
-	
-			
-					
-				
-				
-				
-				
-			
-	
-	
-		
-			
-					
-				
-				
-				
-				
-			
-	
-	
-		
-			
-					
-				
-				
-				
-				
-			
-	
-	
-		
-			
-				
-				
-				
-				
-				
-			
-	
-	
-		
-			
-					
-				
-				
-				
-				
-			
-	
-	
-		
-			
-				
-				
-				
-				
-				
-			
-	
-	
-
-		
-		
-				
-				
-				
-				
-			
-	
- 
